@@ -1,28 +1,31 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600; /* Semi-Bold */
+    font-weight: 600;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
 }
 
-nav {
+nav.navbar {
     background-color: #333;
+    margin: 0;
+    padding: 0;
+    
 }
 
-nav ul {
+nav.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-nav ul li {
+nav.navbar ul li {
     float: left;
 }
 
-nav ul li a {
+nav.navbar ul li a {
     display: block;
     padding: 14px 20px;
     color: white;
@@ -30,6 +33,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav.navbar ul li a:hover {
     background-color: #111;
+}
+
+div.content {
+    padding-left: 20px; /* Adjust the value as needed */
+    padding-right: 20px; /* Adjust the value as needed */
 }
