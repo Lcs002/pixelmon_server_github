@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Evoluciones - Pixelmon Server</title>
+    <style>
+        /* Estilo para la barra de navegación */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        /* Estilo para las tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para las imágenes */
+        .pokemon-image {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+        }
+		
+		.battle-info {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .show-team {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <ul>
+            <li><a href="https://upm365-my.sharepoint.com/:u:/g/personal/lucas_vmoreira_alumnos_upm_es/EaQzP1Jb6u5Eo2_PT4XMDR0BXQKIIU_5xsy1JhebwVuq2w?e=Z7BQgZ">Página Inicial</a></li>
+            <li><a href="https://upm365-my.sharepoint.com/:u:/g/personal/lucas_vmoreira_alumnos_upm_es/EdetusvZ-pJNmyHSnBK-Tw8Bh5k8TlmFkVY7Nb0VPjN6TQ?e=lAJLzx">Aprendiendo Pokémon</a></li>
+            <li><a href="guia-de-aventura.html">Guía de Aventura</a></li>
+            <li><a href="mega-evolucion.html">Mega Evolución</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="mapa-del-mundo.html">Mapa del Mundo</a></li>
+        </ul>
+    </nav>
+
+    <h1>Mega Evoluciones</h1>
+
+    <p>Las <strong>Mega Evoluciones</strong> son una mecánica especial introducida en los videojuegos de Pokémon que permite a ciertos Pokémon alcanzar una forma más poderosa durante la batalla. Para activar una Mega Evolución, se necesita una <strong>Mega Piedra</strong> correspondiente al Pokémon en cuestión, y este debe tener la habilidad de Mega Evolucionar. Una vez activada, el Pokémon experimenta un aumento significativo en sus estadísticas y, en muchos casos, un cambio en su apariencia o tipo.</p>
+    <p>Esta evolución es temporal y solo dura durante el combate, lo que hace que las Mega Evoluciones sean una herramienta estratégica importante en batallas. Sin embargo, no todos los Pokémon pueden Mega Evolucionar, solo aquellos que tienen acceso a una Mega Piedra específica.</p>
+
+    <h2>Key Stone</h2>
+    <p>Para que un entrenador pueda Mega Evolucionar a sus Pokémon, necesita una Key Stone en su inventario. Para conseguirla, ir a <strong>Quests > Key Stone</strong> y recoger la recompensa gratis.</p>
+
+    <h2>Mega Evoluciones Existentes</h2>
+
+    <table id="megaTable">
+    <thead>
+        <tr>
+            <th>Icono</th>
+            <th>Mega Evolución</th>
+            <th>Cómo Conseguir</th>
+            <th>Local</th>
+            <th>Nivel Recomendado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-pokemon="camerupt">
+            <td><img class="pokemon-image" src="icon-mega-camerupt.png" alt="Mega Camerupt"></td>
+            <td>Mega Camerupt</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Badlands, Volcán</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="steelix">
+            <td><img class="pokemon-image" src="icon-mega-steelix.png" alt="Mega Steelix"></td>
+            <td>Mega Steelix</td>
+            <td>Evoluciona 20 pokémon metal</td>
+            <td>Badlands, Cueva</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="garchomp">
+            <td><img class="pokemon-image" src="icon-mega-garchomp.png" alt="Mega Garchomp"></td>
+            <td>Mega Garchomp</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Desierto</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="altaria">
+            <td><img class="pokemon-image" src="icon-mega-altaria.png" alt="Mega Altaria"></td>
+            <td>Mega Altaria</td>
+            <td>Evoluciona 20 pokémon hada</td>
+            <td>Fairy Forest</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="gallade">
+            <td><img class="pokemon-image" src="icon-mega-gallade.png" alt="Mega Gallade"></td>
+            <td>Mega Gallade</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Fairy Forest</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="gardevoir">
+            <td><img class="pokemon-image" src="icon-mega-gardevoir.png" alt="Mega Gardevoir"></td>
+            <td>Mega Gardevoir</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Fairy Forest</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="sceptile">
+            <td><img class="pokemon-image" src="icon-mega-sceptile.png" alt="Mega Sceptile"></td>
+            <td>Mega Sceptile</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Jungla</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="charizard">
+            <td><img class="pokemon-image" src="icon-mega-charizard-y.png" alt="Mega Charizard Y"></td>
+            <td>Mega Charizard Y</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Plains, Palacio</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="alakazam">
+            <td><img class="pokemon-image" src="icon-mega-alakazam.png" alt="Mega Alakazam"></td>
+            <td>Mega Alakazam</td>
+            <td>Evoluciona 20 pokémon psíquicos</td>
+            <td>Plains, Cueva</td>
+            <td>-</td>
+        </tr>
+        <tr data-pokemon="gyarados">
+            <td><img class="pokemon-image" src="icon-mega-gyarados.png" alt="Mega Gyarados"></td>
+            <td>Mega Gyarados</td>
+            <td>Evoluciona 20 pokémon agua</td>
+            <td>Plains</td>
+            <td>-</td>
+        </tr>
+        <tr data-pokemon="slowbro">
+            <td><img class="pokemon-image" src="icon-mega-slowbro.png" alt="Mega Slowbro"></td>
+            <td>Mega Slowbro</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Plains, Playa</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="venusaur">
+            <td><img class="pokemon-image" src="icon-mega-venusaur.png" alt="Mega Venusaur"></td>
+            <td>Mega Venusaur</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Plains, Bosque</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="blastoise">
+            <td><img class="pokemon-image" src="icon-mega-blastoise.png" alt="Mega Blastoise"></td>
+            <td>Mega Blastoise</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Plains, Playa</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="manectric">
+            <td><img class="pokemon-image" src="icon-mega-manectric.png" alt="Mega Manectric"></td>
+            <td>Mega Manectric</td>
+            <td>Evoluciona 20 pokémon eléctricos</td>
+            <td>Plains, Centro Comercial</td>
+            <td>-</td>
+        </tr>
+        <tr data-pokemon="abomasnow">
+            <td><img class="pokemon-image" src="icon-mega-abomasnow.png" alt="Mega Abomasnow"></td>
+            <td>Mega Abomasnow</td>
+            <td>Evoluciona 20 pokémon hielo</td>
+            <td>Nieve</td>
+            <td>-</td>
+        </tr>
+        <tr data-pokemon="glalie">
+            <td><img class="pokemon-image" src="icon-mega-glalie.png" alt="Mega Glalie"></td>
+            <td>Mega Glalie</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Nieve</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="blaziken">
+            <td><img class="pokemon-image" src="icon-mega-blaziken.png" alt="Mega Blaziken"></td>
+            <td>Mega Blaziken</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Savannas</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="kangashkan">
+            <td><img class="pokemon-image" src="icon-mega-kangashkan.png" alt="Mega Kangashkan"></td>
+            <td>Mega Kangashkan</td>
+            <td>Evoluciona 20 pokémon normal</td>
+            <td>Savannas</td>
+            <td>-</td>
+        </tr>
+        <tr data-pokemon="swampert">
+            <td><img class="pokemon-image" src="icon-mega-swampert.png" alt="Mega Swampert"></td>
+            <td>Mega Swampert</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Pantano</td>
+            <td>20+</td>
+        </tr>
+        <tr data-pokemon="lucario">
+            <td><img class="pokemon-image" src="icon-mega-lucario.png" alt="Mega Lucario"></td>
+            <td>Mega Lucario</td>
+            <td class="show-team">Batalla de Entrenador</td>
+            <td>Taiga</td>
+            <td>20+</td>
+        </tr>
+    </tbody>
+</table>
+	
+	<div id="currentBattle" class="battle-info"></div>
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+const battleInfo = {
+    'camerupt': {
+        title: 'Mega Camerupt',
+        image: 'batalla-mega-camerupt.png'
+    },
+    'garchomp': {
+        title: 'Mega Garchomp',
+        image: 'batalla-mega-garchomp.png'
+    },
+    'gallade': {
+        title: 'Mega Gallade',
+        image: 'batalla-mega-gallade.png'
+    },
+    'gardevoir': {
+        title: 'Mega Gardevoir',
+        image: 'batalla-mega-gardevoir.png'
+    },
+    'sceptile': {
+        title: 'Mega Sceptile',
+        image: 'batalla-mega-sceptile.png'
+    },
+    'charizard': {
+        title: 'Mega Charizard Y',
+        image: 'batalla-mega-charizard-y.png'
+    },
+    'slowbro': {
+        title: 'Mega Slowbro',
+        image: 'batalla-mega-slowbro.png'
+    },
+    'venusaur': {
+        title: 'Mega Venusaur',
+        image: 'batalla-mega-venusaur.png'
+    },
+    'blastoise': {
+        title: 'Mega Blastoise',
+        image: 'batalla-mega-blastoise.png'
+    },
+    'glalie': {
+        title: 'Mega Glalie',
+        image: 'batalla-mega-glalie.png'
+    },
+    'blaziken': {
+        title: 'Mega Blaziken',
+        image: 'batalla-mega-blaziken.png'
+    },
+    'swampert': {
+        title: 'Mega Swampert',
+        image: 'batalla-mega-swampert.png'
+    },
+    'lucario': {
+        title: 'Mega Lucario',
+        image: 'batalla-mega-lucario.png'
+    }
+};
+
+            const currentBattle = document.getElementById('currentBattle');
+            
+            document.querySelectorAll('.show-team').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const pokemon = this.closest('tr').dataset.pokemon;
+                    const info = battleInfo[pokemon];
+                    
+                    if (info) {
+                        currentBattle.innerHTML = `
+                            <h3>Equipo de Batalla - ${info.title}</h3>
+                            <img src="${info.image}" alt="${info.title} Team">
+                        `;
+                        currentBattle.style.display = 'block';
+                        currentBattle.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+	
+	
+</div>
+
+</body>
+</html>
