@@ -4,17 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía de Aventura - Pixelmon Server</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        /* Estilo para la imagen del mapa */
-        img {
-            width: 100%;
-            max-width: 1000px;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="timeline.css">
 </head>
 <body>
 
@@ -30,9 +22,153 @@
         </ul>
     </nav>
 
+    <!-- Main Content -->
     <div class="content">
         <h1>Guía de Aventura - Pixelmon Server</h1>
+
+        <!--This is the main container that contains the whole timeline.-->
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h2>Spawn Town</h3>
+                    <img src="/resources/images/map-spawn.png">
+                    <p>Some Text</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h2>Taiga Island (Exp All)</h3>
+                    <img src="/resources/images/map-taiga.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Jungle Island (Gym)</h2>
+                    <img src="/resources/images/map-jungle.png">
+                    <details>
+                        <summary>Equipo Pokémon</summary>
+                        <img src="/resources/images/gym-1-team.png">
+                        <p>(Venam´s Kiss será sustituido por Poison Jab)
+                            El veneno es débil contra tierra y psíquico Y NO AFECTA A TIPO ACERO, pero Venam tiene coberturas contra estos tipos, Ivysaur es tipo planta, supereficaz contra tipo tierra y su Grimer de alola le permite contrarrestar a los tipos psíquico al ser tipo siniestro y ser inmune contra estos. Lo recomendable a priori es llevar tipos tierra y tipo fuego para encargarse de Ivysaur y Whirlipede, si se llevan tipos psíquico hay que tener cuidado con el Sucker Punch de Croagunk, que si eliges un ataque que haga daño te pegará primero. También hay que tener cuidado con el envenenamiento ya que su movimiento estrella, Poison Jab, tiene una probabilidad del 30% de envenenar a tus pokémon lo que te pondrá las cosas difíciles ya que lidiar con el veneno y ganar es muy complejo, por lo que un cambio safe sería un tipo Acero, ya que no le harán nada. Por último, es recomendable buscar lo que hacen las habilidades y objetos de los Pokémon rivales ya que te pueden servir para saber a quién hacer focus, intentad cargaros rápidamente al Seviper, que os va a dar un dolor de cabeza importante y cuidado con las Spikes del Trubbish, que como las meta os va a hacer daño cada vez que cambiéis de pokémon.</p>
+                    </details>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2> Desert Island (Gym)</h3>
+                    <img src="/resources/images/map-desert.png">
+                    <details>
+                        <summary>Equipo Pokémon</summary>
+                        <img src="/resources/images/gym-2-team.png">
+                        <p>(Gale Strike será sustituido por Power-Up Punch)
+                            COMBATE DOBLE. Si, lo sé, meter un tío de segundo líder de gimnasio con un Lucario es un porro, lo cuál os dice con quien teneis que tener cuidado (spoiler, son Lucario y Combusken). El tipo lucha es débil contra volador, psíquico y hada pero, evidentemente tiene coberturas. El tipo hada parece gran opción y lo es, pero suerte contra Lucario que es tipo Acero y tiene Bullet Punch y Poison Sweep que lo revientan, volador funcionará bien excepto contra Machoke que tiene una Coba Berry (debilita el primer ataque de tipo volador que recibe) y Rock Tomb para reventarlo, psíquico por su parte es la peor opción a mi parecer, tiene demasiados ataques de tipo siniestro y, salvo que lo superes en velocidad, pinta jodido. Su movimiento estrella, Power-Up Punch, se sube el ataque cada vez que golpea y, como lo tenga muy alto, os mata de una a todo el equipo. Por último miraos lo que hacen los objetos a partir de este Gym, que el Farfetch’d de Galar con el Eviolite está rotísimo, Combusken entre la habilidad que se sube la velocidad cada turno (os va a meter un Protect de primeras fijo) y el Charcoal que aumenta la potencia de los ataques de tipo fuego en un 20% y Lucario con Black Belt que hace lo mismo con los ataques de tipo lucha, osea que miradlos también para usarlos vosotros.</p>
+                    </details>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Mesa Island (Team Rocket+Gym)</h3>
+                    <img src="/resources/images/map-mesa.png">
+                    <details>
+                        <summary>Equipo Pokémon</summary>
+                        <img src="/resources/images/gym-3-team.png">
+                        <p>(Spectral Scream será sustituido por Shadow Ball y Mismagius será sustituido por Trevenant con los mismos movimientos, Lampent no llevará objeto)
+                            Contra fantasma lo más lógico es llevar fantasma o siniestro, ni de coña psíquico. Si lleváis siniestro CUIDADO CON MIMIKYU y con el Hidden Power de Drifblim, si lleváis fantasma cuidado con todos XD. A ver este gimnasio se puede hacer con un equipo neutro también, ya que para estas alturas llevaréis un equipo bien definido ya que tendréis a todos en su última etapa evolutiva (salvo pseudolegendarios y pokémons con evolución especial u otros como Volcarona, Grimmsnarl etc). Tened en cuenta la habilidad de Mimikyu, que le permite recibir un primer golpe sin quitarle vida y la de Drifblim, que os quita vida cuando le matéis si le dais con un ataque físico, luego ya tened en cuenta que Shadow Sneak siempre ataca primero salvo que uséis un ataque de prioridad también y seáis más rápidos.
+                            </p>
+                    </details>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Power Plant</h3>
+                    <img src="/resources/images/map-power-plant.png">
+                    <details>
+                        <summary>Equipo Pokémon</summary>
+                        <img src="/resources/images/gym-4-team.png">
+                        <p>(Aquabatics será sustituido por Muddy Water, Dewgong no llevará objeto)
+                            Este gimnasio con un tipo eléctrico os lo fundis fijo, solo tenéis que preocuparos de la habilidad de Lanturn y ya, también es rentable el tipo Planta (ya que algunos lo habréis pillado de inicial) aunque, como veis, está preparado con ataques tipo hielo y volador. La verdad es que de este no hay mucho más que decir, confío en que para estas alturas ya sabréis como se juega a esto y las ventajas y desventajas de vuestro equipo.                            
+                            </p>
+                    </details>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Plains Island (Gym)</h3>
+                    <img src="/resources/images/map-plains.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Swamp Islands (Gym)</h3>
+                    <img src="/resources/images/map-swamp.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Frozen Islands (Gym)</h3>
+                    <img src="/resources/images/map-frozen.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Fairy Forest (Gym)</h3>
+                    <img src="/resources/images/map-fairy-forest.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Taiga Island (Gym)</h3>
+                    <img src="/resources/images/map-taiga.png">
+                    <p>Some Text.</p>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2> Elite 4 Island (Elite 4+Champion)</h3>
+                    <p>Some Text.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h2>Legendary Trainer</h3>
+                    <p>Some Text.</p>
+                </div>
+            </div>
+        </div> 
+        </section>
     </div>
-    
 </body>
 </html>
